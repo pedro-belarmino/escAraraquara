@@ -1,24 +1,40 @@
 export default function Footer() {
     return (
         <div>
-            <footer className="w-full text-white flex bg-blue-600 min-w-96">
+            <footer className="w-full text-white flex w-min-650px bg-[#0032AB] min-w-96">
                 <div className="w-2/12 ">
                 </div>
-                <div className="w-8/12 text-center divide-y divide-white">
-                    <div>
-                        <div className="flex items-center">
+                <div className="w-8/12 text-center divide-y divide-slate-500">
+                    <div className="flex pb-6 pt-10">
+                        <div className="flex items-center w-6/12">
                             <img src="src/assets/pepe.png" alt="" className="m-1" />
-                            <div className=" m-1 flex flex-col text-left font-semibold text-lg">
+                            <div className=" m-1 flex flex-col text-left font-semibold text-l font-rubik"> /*ver por que não deu certo a fonte */
                                 <p>VAMOS JUNTOS</p>
                                 <p>MUDAR O MUNDO!</p>
                             </div>
                         </div>
-                        <div>
-
+                        <div className="w-6/12 flex text-start justify-around text-xs pt-4">
+                            <div className="flex flex-col">
+                                <a href="" className="font-bold">Home</a>
+                                <a href="">Sobre Nós</a>
+                                <a href="">Como Participar</a>
+                                <a href="">Escotismo</a>
+                                <a href="">Blog</a>
+                                <a href="">Contato</a>
+                            </div>
+                            <div className="flex flex-col">
+                                <p className="font-bold">Onde estamos?</p>
+                                <p>
+                                    Av. Antônio Lourenço Corrêa <br />
+                                    491 - Vila Xavier <br />
+                                    Araraquara - SP <br />
+                                    CEP 14810-138
+                                </p>
+                            </div>
                         </div>
                     </div>
 
-                    <div className="flex justify-between">
+                    <div className="flex justify-between mb-6 mt-6">
                         <div className="flex">
                             <svg className="h-4 w-4 mr-1"
                                 width="24"
