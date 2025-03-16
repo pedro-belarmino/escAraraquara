@@ -5,16 +5,10 @@ export default function Home() {
     return (
         <>
             <NavBar />
-            conteudo
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
+            <div className="bg-red-400 flex w-12/12 ">
+
+                w
+            </div>
             <Footer />
             <br />
         </>

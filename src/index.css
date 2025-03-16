@@ -1,2 +1,9 @@
 @import "tailwindcss";
 
+.asap {
+    font-family: "Asap Condensed", "sans-serif"
+}
+
+.rubik {
+    font-family: "Rubik", "sans-serif"
+}

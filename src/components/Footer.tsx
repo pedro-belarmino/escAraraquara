@@ -1,19 +1,19 @@
 export default function Footer() {
     return (
         <div>
-            <footer className="w-full text-white flex w-min-650px bg-[#0032AB] min-w-96">
+            <footer className="w-full text-white flex w-min-650px bg-[#00337C] min-w-96">
                 <div className="w-2/12 ">
                 </div>
-                <div className="w-8/12 text-center divide-y divide-slate-500">
+                <div className="w-8/12 text-center divide-y divide-[#2e55b3]">
                     <div className="flex pb-6 pt-10">
                         <div className="flex items-center w-6/12">
-                            <img src="src/assets/pepe.png" alt="" className="m-1" />
-                            <div className=" m-1 flex flex-col text-left font-semibold text-l font-rubik"> /*ver por que não deu certo a fonte */
+                            <img src="src/assets/images/logoImage.png" className="w-28" alt="" />
+                            <div className="text-2xl asap m-3 flex flex-col text-left font-semibold text-l">
                                 <p>VAMOS JUNTOS</p>
                                 <p>MUDAR O MUNDO!</p>
                             </div>
                         </div>
-                        <div className="w-6/12 flex text-start justify-around text-xs pt-4">
+                        <div className="w-6/12 rubik flex text-start justify-around text-xs pt-4">
                             <div className="flex flex-col">
                                 <a href="" className="font-bold">Home</a>
                                 <a href="">Sobre Nós</a>
