@@ -1,6 +1,6 @@
 export default function NavBar() {
     return (
-        <div className="mb-8 mt-8">
+        <div className="mb-10 mt-10">
             <div className="w-full">
                 <div className="bg-[#FF654D] w-full flex pl-5 pr-5">
                     <div className="w-3/12 flex justify-center items-center h-16">
@@ -8,8 +8,8 @@ export default function NavBar() {
                     </div>
                     <div className="w-3/12"></div>
                     <div className="w-6/12 justify-between flex m-4 text-white font-semibold">
-                        <a href="">Home</a>
-                        <a href="">Sobre Nós</a>
+                        <a href="/">Home</a>
+                        <a href="/sobre-nos">Sobre Nós</a>
                         <a href="">Como Participar</a>
                         <a href="">Escotismo</a>
                         <a href="">Blog</a>
