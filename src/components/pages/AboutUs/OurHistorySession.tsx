@@ -2,7 +2,9 @@ export default function OurHistorySession() {
     return (
         <div className="flex pt-20 pb-20">
             <div className="w-2/12">
-                d
+                *** <br />
+                svg drive <br />
+                ***
             </div>
             <div className="w-8/12">
                 <div className="w-6/12">
