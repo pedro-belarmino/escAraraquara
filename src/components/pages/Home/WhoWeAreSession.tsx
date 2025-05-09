@@ -1,32 +1,23 @@
 export default function WhoWeAreSession() {
     return (
-        <div className="flex pt-20 pb-20">
-            <div className="w-2/12">
+        <div className="flex pt-20 pb-20 ">
+            <div className="w-2/12 ">
 
             </div>
-            <div className="w-8/12">
-                <div className="w-6/12">
-                    <p className="asap text-2xl font-extrabold text-[#ff654d]">QUEM SOMOS NÓS</p>
+            <div className="w-8/12  flex">
+                <div className="w-6/12  mr-20">
                     <div className="rubik text-sm text-[#00337C] space-y-5">
-                        <p>
-                            Desde 1972, o Grupo Escoteiro Araraquara José Luiz Torquato <b>promove o escotismo</b> como uma ferramenta de desenvaivimento pessoal e comunitario.
-                        </p>
-                        <p>
-                            Fundado em 23 de abril. Dia Mundial do Escoteiro, <b>por José Carlos da Rocha Barros e seus amigos</b>, o grupo cresceu e consolidou sua presença na cidade, conquistando uma <b>sede prépria o impactando inúmeras gerações</b>.
-                        </p>
-                        <p>
-                            Em 2011, em nomenagom a <b>José Luiz Torquato</b> - um chefe escoteiro exemplar, reconhacido por sua dedicação, alegria e superação -, o grupo recebeu seu nome atual.
-                        </p>
-                        <p>
-                            Mais do que um movimento, <b>somos uma família que valoriza a união, acolhimento e o trabalho em equipe</b>, inspirando joven e adultos a se tornarem cidadãos mais respansaveis e atuantes.
-                        </p>
-                        <p>
-                            Atualments, seguimos fortalecenda nossa esséncia e <b>ampliando nosso impacto na comunidade</b>. Com ética, respeito e sustentabildade, trabalhamos para formar <b>cidadãos comprometidos em construir um mundo melhor</b>.
-                        </p>
+                        <p className="asap text-2xl font-extrabold text-[#ff654d]">QUEM SOMOS NÓS</p>
+                        <p>Fundado em 1972, o Grupo Escoteiro Araraquara José Luiz Torquato tem uma trajetória marcada pelo compromisso com o escotismo e a foromação de jovens cidadões. Promovemos o desenvolvimento pessoal o trabalho em equipe e os calores do Movimento Escoteiro.</p>
+                        <p>Nossa missão é educar por meio da aventira, da liderança e do serviço à comunidade, preparando-os para serem protagonistas em suas vidas e na sociedade.</p>
+                        <button className="text-[#ff654d] asap border flex rounded-full border-[#ff654d] pl-2 pr-2 pt-1 pb-1 font-semibold text-xl">
+                            <p className="place-self-center">Quem Somos</p>
+                            <svg className="h-5 w-5 place-self-center text-[#ff654d] ml-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">  <circle cx="12" cy="12" r="10" />  <polyline points="12 16 16 12 12 8" />  <line x1="8" y1="12" x2="16" y2="12" /></svg>
+                        </button>
                     </div>
                 </div>
                 <div className="w-6/12">
-
+                    aqui ficam o carrocel de imagem e o svg do painel
                 </div>
             </div>
         </div>
