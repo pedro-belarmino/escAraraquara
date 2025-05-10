@@ -1,3 +1,5 @@
+import ImageHub from "./ImageHub";
+
 export default function OurHistorySession() {
     return (
         <div className="flex pt-20 pb-20">
@@ -8,7 +10,7 @@ export default function OurHistorySession() {
 
 
 
-            <div className="w-8/12">
+            <div className="flex w-8/12">
                 <div className="w-6/12">
                     <p className="asap text-2xl font-bold mb-5 text-[#ff654d]">NOSSA HITÓRIA</p>
                     <div className="rubik text-sm text-[#00337C] space-y-5">
@@ -29,8 +31,10 @@ export default function OurHistorySession() {
                         </p>
                     </div>
                 </div>
-                <div className="w-6/12">
-
+                <div className="w-1/12 ">
+                </div>
+                <div className="w-5/12">
+                    <ImageHub />
                 </div>
             </div>
         </div>
