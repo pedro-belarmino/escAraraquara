@@ -1,11 +1,13 @@
 export default function OurHistorySession() {
     return (
         <div className="flex pt-20 pb-20">
-            <div className="w-2/12">
-                *** <br />
-                svg drive <br />
-                ***
+
+            <div className="w-2/12 h-[180px] bg-amber-200">
+                <img src="src/assets/SVGs/board.svg" alt="" className="w-full h-full object-contain" />
             </div>
+
+
+
             <div className="w-8/12">
                 <div className="w-6/12">
                     <p className="asap text-2xl font-bold mb-5 text-[#ff654d]">NOSSA HITÓRIA</p>
