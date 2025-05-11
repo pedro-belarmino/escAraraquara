@@ -14,7 +14,7 @@ function App() {
           <Route path="/sobre-nos" element={<AboutUs />} />
           <Route path="/teste" element={<Test />} />
 
-          <Route path="*" element={<><p className="bg-red-400 text-red-800 text-9xl">PAGINA NÃO ENCONTRADA</p></>} />
+          <Route path="*" element={<><p className="bg-red-400 text-red-800 place-self-center text-5xl">PAGINA NÃO ENCONTRADA</p></>} />
         </Routes>
       </BrowserRouter>
     </>
