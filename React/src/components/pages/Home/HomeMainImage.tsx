@@ -4,7 +4,7 @@ export default function HomeMainImage() {
         <div className="w-full">
             <div className="relative w-full aspect-[10/3]">
                 <img
-                    src="src/assets/images/home.png"
+                    src="/public/assets/images/home.png"
                     alt="Imagem de Sobre Nós"
                     className="w-full h-full object-cover object-center brightness-65"
                 />

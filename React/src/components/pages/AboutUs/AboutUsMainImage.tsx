@@ -3,7 +3,7 @@ export default function AboutUsMainImage() {
         <div className="w-full">
             <div className="relative w-full aspect-[10/3]">
                 <img
-                    src="src/assets/images/sobre.JPG"
+                    src="/public/assets/images/sobre.JPG"
                     alt="Imagem de Sobre Nós"
                     className="w-full h-full object-cover object-center brightness-65"
                 />
