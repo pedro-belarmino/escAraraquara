@@ -10,7 +10,7 @@ export default function NavBar() {
                     <div className="w-6/12 justify-between flex m-4 text-white font-semibold">
                         <a href="/">Home</a>
                         <a href="/sobre-nos">Sobre Nós</a>
-                        <a href="">Como Participar</a>
+                        <a href="/como-participar">Como Participar</a>
                         <a href="">Escotismo</a>
                         <a href="">Blog</a>
                         <a href="">Contato</a>
