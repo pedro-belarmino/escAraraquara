@@ -22,7 +22,7 @@ export default function Registrations() {
 
 
             <div className="w-1/2 bg-green-300">
-                <img src="public/assets/images/inscricao.jpg" alt="" className="w-full" />
+                <img src="/assets/images/inscricao.jpg" alt="" className="w-full" />
                 <div className="w-1/2 place-self-end">eaisdasdahsdkjashdlkajshdjaçslkdjaçlksdjçalkjalksdjçalksdjal</div>
             </div>
         </div>

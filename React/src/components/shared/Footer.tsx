@@ -7,7 +7,7 @@ export default function Footer() {
                 <div className="w-8/12 text-center divide-y divide-[#2e55b3]">
                     <div className="flex pb-6 pt-10">
                         <div className="flex items-center w-6/12">
-                            <img src="/public/assets/images/logoImage.png" className="w-28" alt="" />
+                            <img src="/assets/images/logoImage.png" className="w-28" alt="" />
                             <div className="text-2xl asap m-3 flex flex-col text-left font-semibold text-l">
                                 <p>VAMOS JUNTOS</p>
                                 <p>MUDAR O MUNDO!</p>

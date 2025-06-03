@@ -4,7 +4,7 @@ export default function NavBar() {
             <div className="w-full">
                 <div className="bg-[#FF654D] w-full flex pl-5 pr-5">
                     <div className="w-3/12 flex justify-center items-center h-16">
-                        <img src="/public/assets/images/logoImage.png" className="w-28" alt="" />
+                        <img src="/assets/images/logoImage.png" className="w-28" alt="" />
                     </div>
                     <div className="w-3/12"></div>
                     <div className="w-6/12 justify-between flex m-4 text-white font-semibold">
