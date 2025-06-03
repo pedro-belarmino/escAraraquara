@@ -11,7 +11,7 @@ export default function NavBar() {
                         <a href="/">Home</a>
                         <a href="/sobre-nos">Sobre Nós</a>
                         <a href="/como-participar">Como Participar</a>
-                        <a href="">Escotismo</a>
+                        <a href="/escotismo">Escotismo</a>
                         <a href="">Blog</a>
                         <a href="">Contato</a>
                         <a href=""><svg className="h-7 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
