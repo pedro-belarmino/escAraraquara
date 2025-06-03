@@ -5,7 +5,7 @@ export default function OurHistorySession() {
         <div className="flex pt-20 pb-20">
 
             <div className="w-2/12 h-[180px] bg-amber-200">
-                <img src="/public/assets/SVGs/board.svg" alt="" className="w-full h-full object-contain" />
+                <img src="/assets/SVGs/board.svg" alt="" className="w-full h-full object-contain" />
             </div>
 
 
