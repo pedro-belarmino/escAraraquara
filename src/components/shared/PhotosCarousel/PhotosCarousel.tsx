@@ -2,22 +2,20 @@ import Carousel from "react-multi-carousel";
 import 'react-multi-carousel/lib/styles.css';
 
 const responsive = {
-  desktop: {
-    breakpoint: { max: 3000, min: 1024 },
-    items: 3,
-    slidesToSlide: 3
-  },
-  tablet: {
-    breakpoint: { max: 1024, min: 464 },
-    items: 2,
-    slidesToSlide: 2
-  },
-  mobile: {
-    breakpoint: { max: 464, min: 0 },
+  allScreens: {
+    breakpoint: { max: 3000, min: 0 },
     items: 1,
     slidesToSlide: 1
   }
 };
+
+const CustomDot = ({ onClick, active }: { onClick?: () => void; active?: boolean }) => (
+  <li
+    onClick={onClick}
+    className={`w-3 h-3 rounded-full mx-1 cursor-pointer transition-all duration-300 ${active ? "bg-orange-600 scale-110" : "bg-gray-300"
+      }`}
+  />
+);
 
 type Photo = {
   id: number;
@@ -30,16 +28,36 @@ type PhotosCarouselProps = {
 
 export default function PhotosCarousel({ images }: PhotosCarouselProps) {
   return (
-    <Carousel responsive={responsive}>
+    <Carousel
+      responsive={responsive}
+
+      arrows={false}
+      showDots={true}
+      renderDotsOutside={false}
+      infinite={true}
+      containerClass="pb-6"
+      dotListClass="flex justify-center mt-4 gap-2"
+      itemClass="px-2"
+      customDot={<CustomDot />}
+      autoPlay={true}
+      autoPlaySpeed={4000}
+
+    >
       {images.map((photo) => (
-        <div key={photo.id} className="p-2 rounded-xl border max-w-90">
-          <img
-            src={photo.imageUrl}
-            alt={`Foto ${photo.id}`}
-            style={{ width: "100%", height: "auto", borderRadius: "8px" }}
-          />
+        <div
+          key={photo.id}
+          className=" rounded-xl place-self-center"
+        >
+          <div className="w-full aspect-[4/3] overflow-hidden rounded-xl">
+            <img
+              src={photo.imageUrl}
+              alt={`Foto ${photo.id}`}
+              className="top-0 left-0 w-full h-full object-cover"
+            />
+          </div>
         </div>
       ))}
     </Carousel>
   );
 }
+

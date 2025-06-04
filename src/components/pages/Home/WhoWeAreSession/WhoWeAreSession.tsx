@@ -7,10 +7,10 @@ export default function WhoWeAreSession() {
             <div className="w-2/12 ">
 
             </div>
-            <div className="w-8/12  flex">
-                <div className="w-6/12  mr-20">
+            <div className="w-8/12 flex">
+                <div className="w-6/12 mr-20">
                     <div className="rubik text-sm text-[#00337C] space-y-5">
-                        <p className="asap text-2xl font-extrabold text-[#ff654d]">QUEM SOMOS NÓS</p>
+                        <p className="asap text-3xl font-extrabold text-[#ff654d]">QUEM SOMOS NÓS</p>
                         <p>Fundado em 1972, o Grupo Escoteiro Araraquara José Luiz Torquato tem uma trajetória marcada pelo compromisso com o escotismo e a foromação de jovens cidadões. Promovemos o desenvolvimento pessoal o trabalho em equipe e os calores do Movimento Escoteiro.</p>
                         <p>Nossa missão é educar por meio da aventira, da liderança e do serviço à comunidade, preparando-os para serem protagonistas em suas vidas e na sociedade.</p>
                         <button className="text-[#ff654d] asap border flex rounded-full border-[#ff654d] pl-2 pr-2 pt-1 pb-1 font-semibold text-xl">
