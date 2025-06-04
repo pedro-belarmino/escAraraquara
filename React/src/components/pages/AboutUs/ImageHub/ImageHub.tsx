@@ -9,7 +9,7 @@ export default function ImageHub() {
                         className="w-full h-full object-cover rounded-2xl"
                     />
                 </div>
-                <div className="w-full aspect-square border rounded-2xl  self-center">
+                <div className="w-full aspect-square border rounded-2xl self-center">
                     <img
                         src="/assets/images/hubImage2.jpg"
                         alt=""
@@ -21,15 +21,14 @@ export default function ImageHub() {
 
             <div className="flex flex-col w-6/12 gap-4">
                 <div className="h-1/12"></div>
-                <div className="w-full aspect-square border rounded-2xl  self-center">
+                <div className="w-full aspect-square border rounded-2xl self-center">
                     <img
                         src="/assets/images/hubImage1.JPG"
-
                         alt=""
                         className="w-full h-full object-cover rounded-2xl"
                     />
                 </div>
-                <div className="w-full aspect-square border rounded-2xl  max-w-[60%] self-start">
+                <div className="w-full aspect-square border rounded-2xl max-w-[60%] self-start">
                     <img
                         src="/assets/images/hubImage4.jpg"
                         alt=""

@@ -1,4 +1,4 @@
-import ImageHub from "./ImageHub";
+import ImageHub from "../ImageHub/ImageHub";
 
 export default function OurHistorySession() {
     return (

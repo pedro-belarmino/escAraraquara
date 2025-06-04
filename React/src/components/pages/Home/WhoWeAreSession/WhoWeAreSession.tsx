@@ -1,3 +1,6 @@
+import PhotosCarousel from "../../../shared/PhotosCarousel/PhotosCarousel";
+import { data } from "./Carrousel_1";
+
 export default function WhoWeAreSession() {
     return (
         <div className="flex pt-20 pb-20 ">
@@ -17,7 +20,7 @@ export default function WhoWeAreSession() {
                     </div>
                 </div>
                 <div className="w-6/12">
-                    aqui ficam o carrocel de imagem e o svg do painel
+                    <PhotosCarousel images={data} />
                 </div>
             </div>
         </div>
