@@ -1,6 +1,6 @@
 export default function ImageHub() {
     return (
-        <div className="flex w-full justify-between h-full aspect-square">
+        <div className="flex w-full justify-between h-full aspect-square bg-sky-200">
             <div className="flex flex-col justify-around w-5/12">
                 <div className="w-full aspect-square max-w-[70%] border rounded-2xl self-end">
                     <img

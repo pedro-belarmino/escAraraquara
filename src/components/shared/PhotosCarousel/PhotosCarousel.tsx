@@ -12,7 +12,7 @@ const responsive = {
 const CustomDot = ({ onClick, active }: { onClick?: () => void; active?: boolean }) => (
   <li
     onClick={onClick}
-    className={`w-3 h-3 rounded-full mx-1 cursor-pointer transition-all duration-300 ${active ? "bg-orange-600 scale-110" : "bg-gray-300"
+    className={`w-3 h-3 rounded-full mx-1 cursor-pointer transition-all duration-300 ${active ? "bg-[#ff654d] scale-110" : "bg-gray-300"
       }`}
   />
 );
@@ -40,7 +40,7 @@ export default function PhotosCarousel({ images }: PhotosCarouselProps) {
       itemClass="px-2"
       customDot={<CustomDot />}
       autoPlay={true}
-      autoPlaySpeed={4000}
+      autoPlaySpeed={3000}
 
     >
       {images.map((photo) => (
