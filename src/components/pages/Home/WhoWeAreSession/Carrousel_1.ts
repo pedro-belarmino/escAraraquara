@@ -1,11 +1,11 @@
 export const data = [
     {
         id: 1,
-        imageUrl: "/assets/images/whoWeAreCarousel/IMG_3806.JPG"
+        imageUrl: "/assets/images/whoWeAreCarousel/IMG_4809.JPG"
     },
     {
         id: 2,
-        imageUrl: "/assets/images/whoWeAreCarousel/IMG_4809.JPG"
+        imageUrl: "/assets/images/whoWeAreCarousel/IMG_3806.JPG"
     },
     {
         id: 3,
