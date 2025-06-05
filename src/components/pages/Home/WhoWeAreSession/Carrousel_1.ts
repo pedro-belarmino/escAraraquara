@@ -5,7 +5,7 @@ export const data = [
     },
     {
         id: 2,
-        imageUrl: "/assets/images/whoWeAreCarousel/IMG_3806.JPG"
+        imageUrl: "/assets/images/78364704-cc7c-42a4-aa23-8d1783a55a7a.jpg"
     },
     {
         id: 3,
