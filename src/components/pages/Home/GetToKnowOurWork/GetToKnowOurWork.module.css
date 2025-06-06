@@ -1,0 +1,27 @@
+.mainContainer {
+      position: relative;
+  width: 100%;
+  background-color: #D0C9BF;
+  display: flex;
+  min-height: 400px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 3rem;
+}
+
+.img {
+    position: absolute;
+bottom: 0;
+left: 0;
+width: 100%;
+pointer-events: none;
+}
+
+.title {
+    font-weight: bold;
+font-size: 1.875rem; /* 30px = text-3xl */
+text-align: center;
+color: #00337C;
+font-family: 'Asap Condensed', sans-serif;
+}

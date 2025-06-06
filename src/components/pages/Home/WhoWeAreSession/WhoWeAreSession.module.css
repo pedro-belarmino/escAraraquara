@@ -1,0 +1,25 @@
+.mainContainer {
+    display: flex;
+    padding-top: 5rem;   /* 5rem = 80px = pt-20 */
+    padding-bottom: 5rem; /* 5rem = 80px = pb-20 */
+}
+
+.rightSide {
+    width: 66.666667%;
+    display: flex;
+}
+
+.containerRight_left {
+    width: 50%;
+    margin-right: 5rem; /* 5rem = 80px = mr-20 */
+}
+
+.text_area {
+    font-family: 'Rubik', sans-serif;
+font-size: 0.875rem; /* 14px = text-sm */
+color: #00337C;
+display: flex;
+flex-direction: column;
+gap: 1.25rem; /* 1.25rem = 20px = space-y-5 */
+
+}

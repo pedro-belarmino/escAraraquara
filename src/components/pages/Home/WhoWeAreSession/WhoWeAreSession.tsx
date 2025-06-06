@@ -1,19 +1,20 @@
 import { useNavigate } from "react-router-dom";
 import PhotosCarousel from "../../../shared/PhotosCarousel/PhotosCarousel";
 import { data } from "./Carrousel_1";
+import styles from './WhoWeAreSession.module.css'
 
 export default function WhoWeAreSession() {
 
     const navigate = useNavigate()
 
     return (
-        <div className="flex pt-20 pb-20 ">
-            <div className="w-2/12 ">
+        <div className={styles.mainContainer}>
+            <div className="w-2/12">
 
             </div>
-            <div className="w-8/12 flex">
-                <div className="w-6/12 mr-20">
-                    <div className="rubik text-sm text-[#00337C] space-y-5">
+            <div className={styles.rightSide}>
+                <div className={styles.containerRight_left}>
+                    <div className={styles.text_area}>
                         <p className="asap text-3xl font-extrabold text-[#ff654d]">QUEM SOMOS NÓS</p>
                         <p>Fundado em 1972, o Grupo Escoteiro Araraquara José Luiz Torquato tem uma trajetória marcada pelo compromisso com o escotismo e a foromação de jovens cidadões. Promovemos o desenvolvimento pessoal o trabalho em equipe e os calores do Movimento Escoteiro.</p>
                         <p>Nossa missão é educar por meio da aventira, da liderança e do serviço à comunidade, preparando-os para serem protagonistas em suas vidas e na sociedade.</p>

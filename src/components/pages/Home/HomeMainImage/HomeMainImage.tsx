@@ -1,14 +1,16 @@
+import styles from './HomeMainImage.module.css'
+
 export default function HomeMainImage() {
     return (
 
         <div className="w-full">
-            <div className="relative w-full aspect-[10/3]">
+            <div className={styles.mainContainer}>
                 <img
                     src="/public/assets/images/home.png"
                     alt="Imagem de Sobre Nós"
-                    className="w-full h-full object-cover object-center brightness-65"
+                    className={styles.img}
                 />
-                <div className="text-4xl asap text-white text-center absolute inset-0 flex-col flex items-center justify-center font-bold">
+                <div className={styles.containerStyle}>
                     <p>
                         HÁ 53 ANOS CONSTRUINDO
                     </p>
