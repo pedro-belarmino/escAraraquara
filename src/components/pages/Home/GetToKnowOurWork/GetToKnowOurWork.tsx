@@ -1,11 +1,10 @@
 import ReactPlayer from "react-player";
-import styles from './GetToKnowOurWork.module.css'
 
 export default function GetToKnowOurWork() {
     return (
-        <div className={styles.mainContainer}>
+        <div className='relative w-full bg-[#D0C9BF] min-h-[400px] items-center justify-center flex flex-col pt-10'>
             <div className="z-10">
-                <p className={styles.title}>CONHEÇA NOSSO TRABALHO</p>
+                <p className='font-bold text-3xl text-center text-[#00337C] asap'>CONHEÇA NOSSO TRABALHO</p>
                 <ReactPlayer
                     url="https://www.youtube.com/watch?v=H7nFdHFK-Go"
                     style={{ width: "80vw", aspectRatio: "16/9", padding: "40px" }}
@@ -15,7 +14,7 @@ export default function GetToKnowOurWork() {
 
             <img
                 src="/assets/SVGs/trees.svg"
-                className={styles.img}
+                className='absolute w-full '
                 style={{ objectFit: "none" }}
             />
         </div>

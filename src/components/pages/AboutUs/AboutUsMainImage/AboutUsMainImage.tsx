@@ -8,7 +8,7 @@ export default function AboutUsMainImage() {
                     alt="Imagem de Sobre Nós"
                     className="w-full h-full object-cover object-center brightness-65"
                 />
-                <p className="absolute inset-0 flex items-center justify-center font-bold text-4xl asap text-center text-white">
+                <p className="absolute inset-0 flex items-center justify-center font-bold text-6xl asap text-center text-white">
                     SOBRE NÓS
                 </p>
             </div>

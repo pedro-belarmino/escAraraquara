@@ -48,7 +48,7 @@ export default function PhotosCarousel({ images }: PhotosCarouselProps) {
           key={photo.id}
           className="place-self-center"
         >
-          <div className="w-full aspect-[4/3] overflow-hidden">
+          <div className="w-full aspect-[5/3] overflow-hidden">
             <img
               src={photo.imageUrl}
               alt={`Foto ${photo.id}`}
