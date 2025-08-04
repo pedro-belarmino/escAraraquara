@@ -4,9 +4,15 @@ export default function OurHistorySession() {
     return (
         <div className="flex pt-20 pb-20">
 
-            <div className="w-2/12 h-[180px] bg-amber-200">
-                <img src="/assets/SVGs/board.svg" alt="" className="w-full h-full object-contain" />
+            <div className="w-2/12 h-[180px] relative overflow-visible">
+                <img
+                    src="/assets/SVGs/board.svg"
+                    alt=""
+                    className="-translate-x-[28.57%] h-[180px] w-auto"
+                />
             </div>
+
+
 
 
 

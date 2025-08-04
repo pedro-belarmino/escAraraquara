@@ -30,7 +30,6 @@ export default function PhotosCarousel({ images }: PhotosCarouselProps) {
   return (
     <Carousel
       responsive={responsive}
-
       arrows={false}
       showDots={true}
       renderDotsOutside={false}
@@ -41,7 +40,6 @@ export default function PhotosCarousel({ images }: PhotosCarouselProps) {
       customDot={<CustomDot />}
       autoPlay={true}
       autoPlaySpeed={3000}
-
     >
       {images.map((photo) => (
         <div
@@ -52,7 +50,7 @@ export default function PhotosCarousel({ images }: PhotosCarouselProps) {
             <img
               src={photo.imageUrl}
               alt={`Foto ${photo.id}`}
-              className="top-0 left-0 w-full h-full object-cover"
+              className="top-0 left-0 w-full h-full object-cover rounded-2xl"
             />
           </div>
         </div>

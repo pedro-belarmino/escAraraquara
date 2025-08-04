@@ -1,7 +1,7 @@
 export default function TheScoutMovement() {
     return (
-        <div className="flex w-3/4 p-10 place-self-center space-x-5 bg-sky-300">
-            <div className="w-1/2 bg-red-300 space-y-5">
+        <div className="flex w-3/4 p-10 place-self-center space-x-5">
+            <div className="w-1/2  space-y-5">
 
                 <p className="text-[#FF654D] font-bold text-3xl asap ">O MOVIMENTO ESCOTEIRO</p>
 
@@ -14,14 +14,14 @@ export default function TheScoutMovement() {
                     <p>No Brasil, o movimento é organizado pela <b>União dos Escoteiros do Brasil (UEB),</b> seguindo princípios que unem aventura, desafios e crescimento pessoal.</p>
 
                     <p>Se quiser saber mais sobre o escotismo e sua história,
-                        acesse: <a className="font-semibold hover:underline" href="https://www.escoteiros.org.br" target="blank">www.escoteiros.org.br</a></p>
+                        acesse: <a className="font-semibold  hover:underline" href="https://www.escoteiros.org.br" target="blank">www.escoteiros.org.br</a></p>
                 </div>
 
             </div>
 
 
-            <div className="w-1/2 bg-green-300">
-                <img src="/assets/images/Historia2.png" alt="" className="w-full" />
+            <div className="w-1/2 bg-green-300 flex items-center">
+                <img src="/assets/images/Historia2.png" alt="" className="w-full  aspect-[6/4] object-cover object-center " />
             </div>
         </div>
     )
