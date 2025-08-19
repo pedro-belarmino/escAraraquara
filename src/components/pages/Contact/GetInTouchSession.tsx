@@ -34,7 +34,7 @@ export default function GetInTouchSession() {
                     </div>
                 </div>
                 <div className="w-full lg:w-1/2">
-                    <img src="public/assets/images/IMG_0877.JPG" className="h-full object-cover" alt="" />
+                    <img src="/assets/images/IMG_0877.JPG" className="h-full object-cover" alt="" />
                 </div>
             </div>
         </div>
