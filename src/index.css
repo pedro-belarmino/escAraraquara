@@ -7,7 +7,3 @@
 .rubik {
     font-family: "Rubik", "sans-serif"
 }
-
-body {
-    @apply min-w-[1000px]
-}

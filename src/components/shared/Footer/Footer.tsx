@@ -5,23 +5,29 @@ export default function Footer() {
                 <div className="w-2/12 ">
                 </div>
                 <div className="w-8/12 text-center divide-y divide-[#2e55b3]">
-                    <div className="flex pb-6 pt-10">
-                        <div className="flex items-center w-6/12">
+                    <div className="flex flex-col md:flex-row pb-6 pt-10">
+                        <div className="flex items-center w-full md:w-6/12">
                             <img src="/assets/images/logoImage.png" className="w-28" alt="" />
                             <div className="text-2xl asap m-3 flex flex-col text-left font-semibold text-l">
                                 <p>VAMOS JUNTOS</p>
                                 <p>MUDAR O MUNDO!</p>
                             </div>
                         </div>
-                        <div className="w-6/12 rubik flex text-start justify-around text-xs pt-4">
-                            <div className="flex flex-col">
-                                <a href="" className="font-bold">Home</a>
-                                <a href="">Sobre Nós</a>
-                                <a href="">Como Participar</a>
-                                <a href="">Escotismo</a>
-                                <a href="">Blog</a>
-                                <a href="">Contato</a>
+
+                        <div
+                            id="container"
+                            className="w-full md:w-6/12 rubik flex flex-col md:flex-row 
+             text-left justify-around text-xs pt-4"
+                        >
+                            <div className="hidden md:flex flex-col">
+                                <a href="/" className="font-bold">Home</a>
+                                <a href="/sobre-nos">Sobre Nós</a>
+                                <a href="/como-participar">Como Participar</a>
+                                <a href="/escotismo">Escotismo</a>
+                                <a href="/blog">Blog</a>
+                                <a href="/contato">Contato</a>
                             </div>
+
                             <div className="flex flex-col">
                                 <p className="font-bold">Onde estamos?</p>
                                 <p>
@@ -32,9 +38,12 @@ export default function Footer() {
                                 </p>
                             </div>
                         </div>
+
                     </div>
 
-                    <div className="flex justify-between mb-6 mt-6">
+
+
+                    <div className="flex flex-col-reverse md:flex-row justify-between mb-6 mt-6">
                         <div className="flex">
                             <svg className="h-4 w-4 mr-1"
                                 width="24"
@@ -52,7 +61,7 @@ export default function Footer() {
                             <p className="text-xs">2025 Grupo Escoteiro Araraquara - Todos os Direitos Reservados </p>
                         </div>
 
-                        <div className="flex">
+                        <div className="flex mb-4 md:mb-0 justify-around">
                             <svg className="h-5 w-5" width="24" height="24" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">  <path stroke="none" d="M0 0h24v24H0z" />  <rect x="4" y="4" width="16" height="16" rx="4" />  <circle cx="12" cy="12" r="3" />  <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
                             </svg>
                             <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">  <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z" />  <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" />

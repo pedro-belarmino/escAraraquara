@@ -36,7 +36,7 @@ export default function FrequentlyAskedQuestions() {
                     </div>
                 </div>
                 <div className="w-1/2">
-                    <img src="public/assets/newSVGs/Vetores 1-07.svg" alt="" />
+                    <img src="/assets/newSVGs/Vetores 1-07.svg" alt="" />
                 </div>
 
 
@@ -45,7 +45,7 @@ export default function FrequentlyAskedQuestions() {
 
             <div className="w-full overflow-hidden">
                 <img
-                    src="public/assets/SVGs/trees.svg"
+                    src="/assets/SVGs/trees.svg"
                     alt=""
                     className="w-full block"
                 />
