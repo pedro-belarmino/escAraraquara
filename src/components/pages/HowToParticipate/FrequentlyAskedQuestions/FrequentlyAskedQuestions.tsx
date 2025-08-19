@@ -2,11 +2,13 @@ export default function FrequentlyAskedQuestions() {
     return (
         <div className="w-full bg-[#D0C9BF]">
 
-            <div className="w-3/4 p-10 flex space-x-10 place-self-center">
+            <div className="w-full max-w-6xl p-10 flex flex-col md:flex-row md:space-x-10 place-self-center space-y-5 md:space-y-0">
 
-                <div className="w-1/2 space-y-4 ">
-                    <p className="asap text-4xl font-bold text-[#FF654D]">PERGUNTAS FREQUENTES</p>
-                    <div className="text-[#00337C] space-y-4">
+                {/* Texto */}
+                <div className="w-full md:w-1/2 space-y-4">
+                    <p className="asap text-4xl md:text-4xl font-bold text-[#FF654D] text-center md:text-left">PERGUNTAS FREQUENTES</p>
+
+                    <div className="text-[#00337C] space-y-4 md:text-base">
                         <div>
                             <b>1- Qual a idade mínima para participar?</b>
                             <p>Aceitamos crianças a partir de 6 anos e meio completos.</p>
@@ -35,24 +37,18 @@ export default function FrequentlyAskedQuestions() {
                         <p>Se tiver mais dúvidas, entre em contato conosco pelas redes sociais ou fale com nossa equipe presencialmente em um de nossos encontros!</p>
                     </div>
                 </div>
-                <div className="w-1/2">
-                    <img src="/assets/newSVGs/Vetores 1-07.svg" alt="" />
+
+                <div className="w-full lg:w-1/2 hidden lg:flex items-center justify-center">
+                    <img src="/assets/newSVGs/Vetores 1-07.svg" alt="" className="w-full object-contain" />
                 </div>
-
-
 
             </div>
 
             <div className="w-full overflow-hidden">
-                <img
-                    src="/assets/SVGs/trees.svg"
-                    alt=""
-                    className="w-full block"
-                />
+                <img src="/assets/SVGs/trees.svg" alt="" className="w-full block" />
             </div>
 
-
-
         </div>
+
     )
 }
