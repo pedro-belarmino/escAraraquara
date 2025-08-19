@@ -29,7 +29,6 @@ export default function GetInTouchSession() {
                             <b className="rubik">Araraquara - SP</b>
                         </div>
 
-
                         <br />
                     </div>
                 </div>
