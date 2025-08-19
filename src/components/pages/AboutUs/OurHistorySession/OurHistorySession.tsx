@@ -18,8 +18,8 @@ export default function OurHistorySession() {
 
             <div className="flex w-8/12">
                 <div className="w-6/12">
-                    <p className="asap text-2xl font-bold mb-5 text-[#ff654d]">NOSSA HITÓRIA</p>
-                    <div className="rubik text-sm text-[#00337C] space-y-5">
+                    <p className="asap text-4xl font-bold mb-5 text-[#ff654d]">NOSSA HITÓRIA</p>
+                    <div className=" rubik  text-[#00337C] space-y-5">
                         <p>
                             Desde 1972, o Grupo Escoteiro Araraquara José Luiz Torquato <b>promove o escotismo</b> como uma ferramenta de desenvaivimento pessoal e comunitario.
                         </p>

@@ -49,7 +49,7 @@ export default function Footer() {
                                 <circle cx="12" cy="12" r="9" />
                                 <path d="M14.5 9a3.5 4 0 1 0 0 6" />
                             </svg>
-                            <p className="text-xs">Grupo Escoteiro Araraquara - Todos os Direitos Reservados </p>
+                            <p className="text-xs">2025 Grupo Escoteiro Araraquara - Todos os Direitos Reservados </p>
                         </div>
 
                         <div className="flex">

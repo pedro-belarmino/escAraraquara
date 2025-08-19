@@ -5,6 +5,7 @@ import Test from "./views/Test"
 import HowToParticipate from "./views/HowToParticipate"
 import Template from "./views/Template"
 import Scouting from "./views/Scouting"
+import Contact from "./views/Contact"
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
             <Route path="/sobre-nos" element={<AboutUs />} />
             <Route path="/como-participar" element={<HowToParticipate />} />
             <Route path="/escotismo" element={<Scouting />} />
+            <Route path="/contato" element={<Contact />} />
           </Route>
           <Route path="/teste" element={<Test />} />
 

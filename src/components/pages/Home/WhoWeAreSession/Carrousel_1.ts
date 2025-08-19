@@ -9,7 +9,7 @@ export const data = [
     },
     {
         id: 3,
-        imageUrl: "/assets/images/whoWeAreCarousel/IMG_3593.JPG"
+        imageUrl: "/assets/images/whoWeAreCarousel/IMG_3352.JPG"
     },
     {
         id: 4,
