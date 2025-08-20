@@ -15,7 +15,7 @@ export default function WhoWeAreSession() {
             </p>
 
             {/* Conteúdo */}
-            <div className="flex flex-col lg:flex-row space-y-5 lg:space-y-0 lg:space-x-5">
+            <div className="rubik text-[#00337C] flex flex-col lg:flex-row space-y-5 lg:space-y-0 lg:space-x-5">
 
                 {/* Texto */}
                 <div className="w-full lg:w-1/2 space-y-5">
