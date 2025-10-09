@@ -1,3 +1,6 @@
+import { Link } from "react-router-dom";
+import { Button } from "@mui/material";
+
 export default function Footer() {
     return (
         <div>
@@ -20,12 +23,12 @@ export default function Footer() {
              text-left justify-around text-xs pt-4"
                         >
                             <div className="hidden md:flex flex-col">
-                                <a href="/" className="font-bold">Home</a>
-                                <a href="/sobre-nos">Sobre Nós</a>
-                                <a href="/como-participar">Como Participar</a>
-                                <a href="/escotismo">Escotismo</a>
+                                <Link to="/" className="font-bold">Home</Link>
+                                <Link to="/sobre-nos">Sobre Nós</Link>
+                                <Link to="/como-participar">Como Participar</Link>
+                                <Link to="/escotismo">Escotismo</Link>
                                 <a href="/blog">Blog</a>
-                                <a href="/contato">Contato</a>
+                                <Link to="/contato">Contato</Link>
                             </div>
 
                             <div className="flex flex-col">
@@ -36,6 +39,14 @@ export default function Footer() {
                                     Araraquara - SP <br />
                                     CEP 14810-138
                                 </p>
+                            </div>
+
+                            <div className="flex flex-col justify-center">
+                                <Link to="/login">
+                                    <Button variant="contained" size="small" style={{ backgroundColor: 'white', color: '#00337C', fontWeight: 'bold' }}>
+                                        Sou escotista/dirigente
+                                    </Button>
+                                </Link>
                             </div>
                         </div>
 
