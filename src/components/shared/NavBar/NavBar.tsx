@@ -1,7 +1,13 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
+import { useTheme } from "../../../contexts/ThemeContext";
+import { IconButton } from "@mui/material";
+import Brightness4Icon from "@mui/icons-material/Brightness4";
+import Brightness7Icon from "@mui/icons-material/Brightness7";
 
 export default function NavBar() {
     const [isOpen, setIsOpen] = useState(false);
+    const { mode, toggleTheme } = useTheme();
 
     return (
         <div className="mb-10 mt-10 relative">
@@ -11,28 +17,16 @@ export default function NavBar() {
                         <img src="/assets/images/logoImage.png" className="w-28" alt="Logo" />
                     </div>
 
-                    <div className="hidden md:flex justify-between gap-6 text-white font-semibold">
-                        <a href="/">Home</a>
-                        <a href="/sobre-nos">Sobre Nós</a>
-                        <a href="/como-participar">Como Participar</a>
-                        <a href="/escotismo">Escotismo</a>
+                    <div className="hidden md:flex justify-between items-center gap-6 text-white font-semibold">
+                        <Link to="/">Home</Link>
+                        <Link to="/sobre-nos">Sobre Nós</Link>
+                        <Link to="/como-participar">Como Participar</Link>
+                        <Link to="/escotismo">Escotismo</Link>
                         <a href="/blog">Blog</a>
-                        <a href="/contato">Contato</a>
-                        {/* <a href="">
-                            <svg
-                                className="h-7 w-5 text-white"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke="currentColor"
-                            >
-                                <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth="2"
-                                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                                />
-                            </svg>
-                        </a> */}
+                        <Link to="/contato">Contato</Link>
+                        <IconButton sx={{ ml: 1 }} onClick={toggleTheme} color="inherit">
+                            {mode === 'dark' ? <Brightness7Icon /> : <Brightness4Icon />}
+                        </IconButton>
                     </div>
 
                     <button
@@ -87,12 +81,15 @@ export default function NavBar() {
                     </svg>
                 </button>
 
-                <a href="/" className="mb-4 font-semibold">Home</a>
-                <a href="/sobre-nos" className="mb-4">Sobre Nós</a>
-                <a href="/como-participar" className="mb-4">Como Participar</a>
-                <a href="/escotismo" className="mb-4">Escotismo</a>
+                <Link to="/" className="mb-4 font-semibold">Home</Link>
+                <Link to="/sobre-nos" className="mb-4">Sobre Nós</Link>
+                <Link to="/como-participar" className="mb-4">Como Participar</Link>
+                <Link to="/escotismo" className="mb-4">Escotismo</Link>
                 <a href="/blog" className="mb-4">Blog</a>
-                <a href="/contato" className="mb-4">Contato</a>
+                <Link to="/contato" className="mb-4">Contato</Link>
+                <IconButton sx={{ ml: 1 }} onClick={toggleTheme} color="inherit">
+                    {mode === 'dark' ? <Brightness7Icon /> : <Brightness4Icon />}
+                </IconButton>
             </div>
         </div>
     );
