@@ -8,6 +8,7 @@ const DISPONIBILIDADE_OPTIONS = [
   "Domingo de manhã",
   "Domingo à tarde",
   "Feriados",
+  "Sem disponibilidade",
 ];
 
 const EQUIPES_APOIO_OPTIONS = [
@@ -24,6 +25,7 @@ const EQUIPES_APOIO_OPTIONS = [
   "Limpeza",
   "Participação em FESTAS proporcionadas pela Associação",
   "Participações em eventos (distritais, nacionais e internacionais)",
+  "Sem disponibilidade",
 ];
 
 export default function FlorDeLisForm() {
@@ -50,6 +52,8 @@ export default function FlorDeLisForm() {
   const [loading, setLoading] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
+  const [conheceLocalAcampamentoResposta, setConheceLocalAcampamentoResposta] =
+    useState<"Sim" | "Não" | "">("");
 
   const handleInputChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
@@ -67,15 +71,27 @@ export default function FlorDeLisForm() {
   ) => {
     setFormData((prev) => {
       const currentList = prev[field];
+
+      if (value === "Sem disponibilidade") {
+        return {
+          ...prev,
+          [field]: currentList.includes(value) ? [] : [value],
+        };
+      }
+
+      const listWithoutNoAvailability = currentList.filter(
+        (item) => item !== "Sem disponibilidade"
+      );
+
       if (currentList.includes(value)) {
         return {
           ...prev,
-          [field]: currentList.filter((item) => item !== value),
+          [field]: listWithoutNoAvailability.filter((item) => item !== value),
         };
       } else {
         return {
           ...prev,
-          [field]: [...currentList, value],
+          [field]: [...listWithoutNoAvailability, value],
         };
       }
     });
@@ -83,14 +99,17 @@ export default function FlorDeLisForm() {
 
   const validateForm = (): boolean => {
     if (!formData.nome.trim()) return false;
-    if (!formData.nomePreferido.trim()) return false;
     if (!formData.endereco.trim()) return false;
     if (!formData.celular.trim()) return false;
     if (!formData.profissao.trim()) return false;
-    if (!formData.areaConhecimento.trim()) return false;
-    if (!formData.habilidades.trim()) return false;
-    if (!formData.contatosProfissionais.trim()) return false;
-    if (!formData.conheceLocalAcampamento.trim()) return false;
+    if (!conheceLocalAcampamentoResposta) return false;
+
+    if (
+      conheceLocalAcampamentoResposta === "Sim" &&
+      !formData.conheceLocalAcampamento.trim()
+    ) {
+      return false;
+    }
 
     if (formData.jaFoiEscoteiro === "Sim" && !formData.anoEscoteiro?.trim()) {
       return false;
@@ -141,6 +160,7 @@ export default function FlorDeLisForm() {
           <button
             onClick={() => {
               setSubmitted(false);
+              setConheceLocalAcampamentoResposta("");
               setFormData({
                 jaFoiEscoteiro: "Não",
                 anoEscoteiro: "",
@@ -165,12 +185,6 @@ export default function FlorDeLisForm() {
           >
             Preencher outro formulário
           </button>
-          <a
-            href="/flor-de-lis/dashboard"
-            className="px-6 py-3 bg-[#00337C] text-white font-semibold rounded-lg hover:bg-[#00255a] transition-colors inline-block"
-          >
-            Ver Relatório / Dashboard
-          </a>
         </div>
       </div>
     );
@@ -183,7 +197,7 @@ export default function FlorDeLisForm() {
           Rede Flor de Lis
         </h1>
         <p className="text-gray-600 font-medium">
-          Preencha o formulário abaixo. Todos os campos são obrigatórios.
+          Preencha o formulário abaixo.
         </p>
       </div>
 
@@ -281,7 +295,7 @@ export default function FlorDeLisForm() {
           </div>
         </div>
 
-        {/* Ficha de Inscrição */}
+        {/* Ficha de InscriÃ§Ã£o */}
         <div className="bg-slate-50 p-6 rounded-xl border border-slate-200 space-y-4">
           <h2 className="text-xl font-bold text-[#00337C] border-b pb-2">
             Ficha de Inscrição
@@ -304,14 +318,13 @@ export default function FlorDeLisForm() {
 
             <div>
               <label className="block text-gray-800 font-semibold mb-2">
-                Gosta de ser chamado de: <span className="text-red-500">*</span>
+                Gosta de ser chamado de: <span className="font-extralight">(opcional)</span>
               </label>
               <input
                 type="text"
                 name="nomePreferido"
                 value={formData.nomePreferido}
                 onChange={handleInputChange}
-                required
                 className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#FF654D] outline-none"
               />
             </div>
@@ -371,35 +384,32 @@ export default function FlorDeLisForm() {
               name="areaConhecimento"
               value={formData.areaConhecimento}
               onChange={handleInputChange}
-              required
               className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#FF654D] outline-none"
             />
           </div>
 
           <div>
             <label className="block text-gray-800 font-semibold mb-2">
-              Habilidades: <span className="text-red-500">*</span>
+              Habilidades: <span className="font-extralight">(opcional)</span>
             </label>
             <textarea
               name="habilidades"
               value={formData.habilidades}
               onChange={handleInputChange}
               rows={3}
-              required
               className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#FF654D] outline-none"
             />
           </div>
 
           <div>
             <label className="block text-gray-800 font-semibold mb-2">
-              Contatos profissionais e institucionais: <span className="text-red-500">*</span>
+              Contatos profissionais e institucionais: <span className="font-extralight">(opcional)</span>
             </label>
             <textarea
               name="contatosProfissionais"
               value={formData.contatosProfissionais}
               onChange={handleInputChange}
               rows={3}
-              required
               className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#FF654D] outline-none"
             />
           </div>
@@ -415,15 +425,57 @@ export default function FlorDeLisForm() {
               Conhece algum local para ACAMPAMENTO do Grupo ou Seção no final de semana ou feriados?{" "}
               <span className="text-red-500">*</span>
             </label>
-            <textarea
-              name="conheceLocalAcampamento"
-              value={formData.conheceLocalAcampamento}
-              onChange={handleInputChange}
-              rows={3}
-              placeholder="Descreva o local ou digite 'Não conheço'"
-              required
-              className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#FF654D] outline-none"
-            />
+            <div className="flex items-center gap-6">
+              <label className="flex items-center gap-2 cursor-pointer">
+                <input
+                  type="radio"
+                  name="conheceLocalAcampamentoResposta"
+                  value="Sim"
+                  checked={conheceLocalAcampamentoResposta === "Sim"}
+                  onChange={() => {
+                    setConheceLocalAcampamentoResposta("Sim");
+                    setFormData((prev) => ({
+                      ...prev,
+                      conheceLocalAcampamento:
+                        prev.conheceLocalAcampamento === "Não"
+                          ? ""
+                          : prev.conheceLocalAcampamento,
+                    }));
+                  }}
+                  className="w-4 h-4 text-[#FF654D] focus:ring-[#FF654D]"
+                />
+                Sim
+              </label>
+              <label className="flex items-center gap-2 cursor-pointer">
+                <input
+                  type="radio"
+                  name="conheceLocalAcampamentoResposta"
+                  value="Não"
+                  checked={conheceLocalAcampamentoResposta === "Não"}
+                  onChange={() => {
+                    setConheceLocalAcampamentoResposta("Não");
+                    setFormData((prev) => ({
+                      ...prev,
+                      conheceLocalAcampamento: "Não",
+                    }));
+                  }}
+                  className="w-4 h-4 text-[#FF654D] focus:ring-[#FF654D]"
+                />
+                Não
+              </label>
+            </div>
+
+            {conheceLocalAcampamentoResposta === "Sim" && (
+              <textarea
+                name="conheceLocalAcampamento"
+                value={formData.conheceLocalAcampamento}
+                onChange={handleInputChange}
+                rows={3}
+                placeholder="Descreva o local"
+                required
+                className="w-full mt-4 p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#FF654D] outline-none"
+              />
+            )}
           </div>
         </div>
 

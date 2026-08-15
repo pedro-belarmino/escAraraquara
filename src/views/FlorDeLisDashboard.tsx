@@ -39,10 +39,10 @@ export default function FlorDeLisDashboard() {
     const term = searchTerm.toLowerCase();
     return (
       item.nome.toLowerCase().includes(term) ||
-      item.nomePreferido.toLowerCase().includes(term) ||
+      (item.nomePreferido ?? "").toLowerCase().includes(term) ||
       item.profissao.toLowerCase().includes(term) ||
-      item.areaConhecimento.toLowerCase().includes(term) ||
-      item.habilidades.toLowerCase().includes(term)
+      (item.areaConhecimento ?? "").toLowerCase().includes(term) ||
+      (item.habilidades ?? "").toLowerCase().includes(term)
     );
   });
 
@@ -197,7 +197,7 @@ export default function FlorDeLisDashboard() {
                           Área de Conhecimento
                         </span>
                         <p className="font-semibold text-gray-800">
-                          {sub.areaConhecimento}
+                          {sub.areaConhecimento?.trim() || "Não informado"}
                         </p>
                       </div>
 
@@ -206,7 +206,7 @@ export default function FlorDeLisDashboard() {
                           Habilidades
                         </span>
                         <p className="text-gray-800 whitespace-pre-wrap">
-                          {sub.habilidades}
+                          {sub.habilidades?.trim() || "Não informado"}
                         </p>
                       </div>
 
@@ -215,7 +215,7 @@ export default function FlorDeLisDashboard() {
                           Contatos Profissionais / Institucionais
                         </span>
                         <p className="text-gray-800 whitespace-pre-wrap">
-                          {sub.contatosProfissionais}
+                          {sub.contatosProfissionais?.trim() || "Não informado"}
                         </p>
                       </div>
 
@@ -279,11 +279,10 @@ export default function FlorDeLisDashboard() {
                           Grupos de Trabalho
                         </span>
                         <span
-                          className={`inline-block px-3 py-1 rounded-full text-xs font-bold ${
-                            sub.interesseGruposTrabalho === "Sim"
-                              ? "bg-green-100 text-green-800"
-                              : "bg-gray-100 text-gray-600"
-                          }`}
+                          className={`inline-block px-3 py-1 rounded-full text-xs font-bold ${sub.interesseGruposTrabalho === "Sim"
+                            ? "bg-green-100 text-green-800"
+                            : "bg-gray-100 text-gray-600"
+                            }`}
                         >
                           {sub.interesseGruposTrabalho}
                         </span>
@@ -294,11 +293,10 @@ export default function FlorDeLisDashboard() {
                           Oficinas ou Palestras
                         </span>
                         <span
-                          className={`inline-block px-3 py-1 rounded-full text-xs font-bold ${
-                            sub.interesseOficinasPalestras === "Sim"
-                              ? "bg-green-100 text-green-800"
-                              : "bg-gray-100 text-gray-600"
-                          }`}
+                          className={`inline-block px-3 py-1 rounded-full text-xs font-bold ${sub.interesseOficinasPalestras === "Sim"
+                            ? "bg-green-100 text-green-800"
+                            : "bg-gray-100 text-gray-600"
+                            }`}
                         >
                           {sub.interesseOficinasPalestras}
                         </span>
@@ -309,11 +307,10 @@ export default function FlorDeLisDashboard() {
                           Apenas Contribuinte Financeiro
                         </span>
                         <span
-                          className={`inline-block px-3 py-1 rounded-full text-xs font-bold ${
-                            sub.apenasApoiadorFinanceiro === "Sim"
-                              ? "bg-purple-100 text-purple-800"
-                              : "bg-gray-100 text-gray-600"
-                          }`}
+                          className={`inline-block px-3 py-1 rounded-full text-xs font-bold ${sub.apenasApoiadorFinanceiro === "Sim"
+                            ? "bg-purple-100 text-purple-800"
+                            : "bg-gray-100 text-gray-600"
+                            }`}
                         >
                           {sub.apenasApoiadorFinanceiro}
                         </span>
