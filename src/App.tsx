@@ -13,13 +13,10 @@ import PrivateWrapper from "./components/routes/PrivateWrapper"
 import { AuthProvider } from "./context/AuthContext"
 
 function App() {
-
-
   return (
-    <>
+    <div className="min-h-screen flex flex-col max-w-[2000px] mx-auto w-full bg-white shadow-2xl overflow-x-hidden">
       <BrowserRouter>
         <AuthProvider>
-
           <Routes>
             <Route path="/" element={<Template />} >
               <Route path="/" element={<Home />} />
@@ -39,7 +36,7 @@ function App() {
           </Routes>
         </AuthProvider>
       </BrowserRouter>
-    </>
+    </div>
   )
 }
 
