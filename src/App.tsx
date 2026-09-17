@@ -8,6 +8,8 @@ import Scouting from "./views/Scouting"
 import Contact from "./views/Contact"
 import FlorDeLisForm from "./views/FlorDeLisForm"
 import FlorDeLisDashboard from "./views/FlorDeLisDashboard"
+import PreInscricaoForm from "./views/PreInscricaoForm"
+import PreInscricaoDashboard from "./views/PreInscricaoDashboard"
 import Login from "./views/Login"
 import PrivateWrapper from "./components/routes/PrivateWrapper"
 import { AuthProvider } from "./context/AuthContext"
@@ -29,10 +31,12 @@ function App() {
               <Route path="/contato" element={<Contact />} />
               <Route path="/flor-de-lis" element={<FlorDeLisForm />} />
               <Route path="/flor-de-lis/dashboard" element={<FlorDeLisDashboard />} />
+              <Route path="/pre-inscricao" element={<PreInscricaoForm />} />
+              <Route element={<PrivateWrapper />}>
+                <Route path="/pre-inscricao/dashboard" element={<PreInscricaoDashboard />} />
+              </Route>
             </Route>
-            <Route element={<PrivateWrapper />}>
-              <Route path="/login" element={<Login />} />
-            </Route>
+            <Route path="/login" element={<Login />} />
             <Route path="/teste" element={<Test />} />
 
             <Route path="*" element={<><p>404</p></>} />
