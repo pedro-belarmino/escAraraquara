@@ -1,5 +1,32 @@
 @import "tailwindcss";
 
+/* Largura máxima da aplicação.
+   Em monitores ultrawide o conteúdo para de esticar e fica centralizado,
+   mantendo as proporções de imagens, textos e grids. */
+:root {
+    --app-max-width: 1536px;
+}
+
+body {
+    background-color: #D0C9BF;
+}
+
+#root {
+    width: 100%;
+    max-width: var(--app-max-width);
+    margin-inline: auto;
+    background-color: #ffffff;
+    /* clip (e não hidden) evita criar um contexto de rolagem no shell */
+    overflow-x: clip;
+}
+
+img,
+svg,
+video,
+iframe {
+    max-width: 100%;
+}
+
 .asap {
     font-family: "Asap Condensed", "sans-serif"
 }

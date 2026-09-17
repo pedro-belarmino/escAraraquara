@@ -2,7 +2,7 @@ import ImageHub from "../ImageHub/ImageHub";
 
 export default function OurHistorySession() {
     return (
-        <div className="flex lg:flex-row pt-20 pb-20">
+        <div className="flex flex-col lg:flex-row pt-10 pb-10 lg:pt-20 lg:pb-20">
 
 
             <div className="hidden lg:block w-2/12 h-[180px] relative overflow-visible">
@@ -14,8 +14,8 @@ export default function OurHistorySession() {
             </div>
 
 
-            <div className="w-full lg:w-8/12 flex justify-center">
-                <div className="w-7/12">
+            <div className="w-full lg:w-8/12 flex justify-center px-6 lg:px-0">
+                <div className="w-full lg:w-7/12">
                     <p className="asap text-4xl font-bold mb-5 text-[#ff654d]">NOSSA HITÓRIA</p>
                     <div className=" rubik  text-[#00337C] space-y-5">
                         <p>
@@ -35,7 +35,7 @@ export default function OurHistorySession() {
                         </p>
                     </div>
                 </div>
-                <div className="w-1/12 ">
+                <div className="hidden lg:block w-1/12">
                 </div>
                 <div className="hidden lg:block w-5/12">
                     <ImageHub />

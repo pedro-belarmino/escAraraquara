@@ -6,7 +6,7 @@ export default function NavBar() {
     return (
         <div className="mb-10 mt-10 relative">
             <div className="w-full">
-                <div className="bg-[#FF654D] w-full flex justify-between items-center pl-20 pr-5 h-16">
+                <div className="bg-[#FF654D] w-full flex justify-between items-center pl-5 md:pl-20 pr-5 h-16">
                     <div className="flex items-center">
                         <img src="/assets/images/logoImage.png" className="w-28" alt="Logo" />
                     </div>

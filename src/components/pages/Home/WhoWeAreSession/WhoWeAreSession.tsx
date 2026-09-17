@@ -7,7 +7,7 @@ export default function WhoWeAreSession() {
     const navigate = useNavigate()
 
     return (
-        <div className="w-11/12 lg:w-10/12 p-10 place-self-center space-y-5">
+        <div className="w-11/12 lg:w-10/12 max-w-7xl p-6 md:p-10 mx-auto space-y-5">
 
             {/* Título - sempre em cima */}
             <p className="asap text-5xl font-extrabold text-[#ff654d] text-center lg:text-left">

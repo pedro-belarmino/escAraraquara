@@ -1,6 +1,6 @@
 export default function TheScoutMovement() {
     return (
-        <div className="flex flex-col lg:flex-row w-3/4 p-10 place-self-center space-y-5 lg:space-y-0 lg:space-x-5">
+        <div className="flex flex-col lg:flex-row w-full lg:w-3/4 max-w-6xl p-6 md:p-10 mx-auto space-y-5 lg:space-y-0 lg:space-x-5">
 
             {/* Texto */}
             <div className="w-full lg:w-1/2 space-y-5">

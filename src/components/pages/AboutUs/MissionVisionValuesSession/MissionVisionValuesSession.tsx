@@ -1,7 +1,7 @@
 export default function MissionVisionValuesSession() {
     return (
         <div className="w-full bg-[#D0C9BF] pt-10 pb-10">
-            <div className="w-full max-w-6xl mx-5 md:mx-auto flex flex-col md:flex-row pl-5 pr-5 justify-around space-y-10 md:space-y-0 md:space-x-5">
+            <div className="w-full max-w-6xl mx-auto flex flex-col md:flex-row px-5 justify-around space-y-10 md:space-y-0 md:space-x-5">
 
                 {/* MISSÃO */}
                 <div className="w-full md:w-3/12 space-y-4">

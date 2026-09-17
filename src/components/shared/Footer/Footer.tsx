@@ -1,10 +1,10 @@
 export default function Footer() {
     return (
         <div>
-            <footer className="w-full text-white flex w-min-650px bg-[#00337C] min-w-96">
-                <div className="w-2/12 ">
+            <footer className="w-full text-white flex bg-[#00337C]">
+                <div className="hidden md:block w-1/12 lg:w-2/12">
                 </div>
-                <div className="w-8/12 text-center divide-y divide-[#2e55b3]">
+                <div className="w-full px-6 md:px-0 md:w-10/12 lg:w-8/12 text-center divide-y divide-[#2e55b3]">
                     <div className="flex flex-col md:flex-row pb-6 pt-10">
                         <div className="flex items-center w-full md:w-6/12">
                             <img src="/assets/images/logoImage.png" className="w-28" alt="" />
@@ -88,7 +88,7 @@ export default function Footer() {
 
                     </div>
                 </div>
-                <div className="w-2/12">
+                <div className="hidden md:block w-1/12 lg:w-2/12">
                 </div>
             </footer>
         </div>

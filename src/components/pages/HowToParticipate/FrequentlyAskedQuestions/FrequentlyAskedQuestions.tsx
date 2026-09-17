@@ -2,7 +2,7 @@ export default function FrequentlyAskedQuestions() {
     return (
         <div className="w-full bg-[#D0C9BF]">
 
-            <div className="w-full max-w-6xl p-10 flex flex-col md:flex-row md:space-x-10 place-self-center space-y-5 md:space-y-0">
+            <div className="w-full max-w-6xl p-6 md:p-10 mx-auto flex flex-col md:flex-row md:space-x-10 space-y-5 md:space-y-0">
 
                 {/* Texto */}
                 <div className="w-full md:w-1/2 space-y-4">

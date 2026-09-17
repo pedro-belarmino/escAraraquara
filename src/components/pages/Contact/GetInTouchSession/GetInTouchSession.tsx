@@ -1,6 +1,6 @@
 export default function GetInTouchSession() {
     return (
-        <div className="p-10 flex flex-col lg:w-2/3 place-self-center">
+        <div className="p-6 md:p-10 flex flex-col w-full lg:w-2/3 max-w-6xl mx-auto">
             <h1 className="asap font-bold text-4xl text-[#FF654D]">ENTRE EM CONTATO</h1>
 
             <div id="container" className="flex flex-col items-center text-center lg:flex-row lg:text-left lg:items-start">
